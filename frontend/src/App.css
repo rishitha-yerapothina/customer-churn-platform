@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #cbd5e1;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 24px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #cbd5e1;
+}
+
+input,
+select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #475569;
+  background: #020617;
+  color: white;
+}
+
+button {
+  grid-column: span 2;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result-card {
+  text-align: center;
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: #facc15;
+  color: #111827;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.probability {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.suggestion {
+  margin-top: 24px;
+  padding: 16px;
+  border-radius: 12px;
+  background: #020617;
+  color: #cbd5e1;
+}
+
+.empty {
+  color: #94a3b8;
+}
+.analytics-section {
+  max-width: 1100px;
+  margin: 32px auto 0;
+}
+
+.analytics-section h2 {
+  margin-bottom: 18px;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.kpi-card,
+.chart-card {
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+.kpi-card p {
+  margin: 0;
+  color: #94a3b8;
+}
+
+.kpi-card h3 {
+  margin: 10px 0 0;
+  font-size: 28px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.chart-card h3 {
+  margin-top: 0;
+}
+.progress-container {
+  width: 100%;
+  height: 14px;
+  background: #1e293b;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  transition: 0.4s ease;
+}
+
+.risk-low {
+  background: #22c55e;
+  color: white;
+}
+
+.risk-medium {
+  background: #facc15;
+  color: black;
+}
+
+.risk-high {
+  background: #ef4444;
+  color: white;
+}
+
+.suggestion ul {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.suggestion li {
+  margin-bottom: 8px;
+}
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.metric-grid div {
+  background: #020617;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.metric-grid span {
+  display: block;
+  color: #94a3b8;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.metric-grid strong {
+  font-size: 18px;
+  color: white;
+}
+@media (max-width: 800px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    grid-column: span 1;
+  }
+  .kpi-grid,
+.charts-grid {
+  grid-template-columns: 1fr;
+}
+}
