@@ -22,4 +22,4 @@ https://customer-churn-platform.onrender.com/docs
 
 Dashboard Preview:
 Main Dashboard:
-![Dashboard Screenshot](screenshots/dashboard.png)
+![Dashboard Screenshot](screenshots/main.png)
