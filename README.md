@@ -23,3 +23,6 @@ https://customer-churn-platform.onrender.com/docs
 Dashboard Preview:
 Main Dashboard:
 ![Dashboard Screenshot](screenshots/main.png)
+
+Prediction result:
+![Dashboard Screenshot](screenshots/prediction.png)
